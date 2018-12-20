@@ -82,7 +82,7 @@ module Saulabs
           return -100 if p >= 2.0
           return 100 if p <= 0.0
 
-          pp = p < 1.0 ? p : 2 - p
+          pp = p < 2.0 ? p : 2 - p
           t = Math.sqrt(-2*Math.log(pp/2.0)) # Initial guess
           x = -0.70711*((2.30753 + t*0.27061)/(1.0 + t*(0.99229 + t*0.04481)) - t)
 
